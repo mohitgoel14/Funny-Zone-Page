@@ -14,7 +14,7 @@ function clearAll() {
 //API FUNCTION TO GENERATE MEMES
 async function showMeme() {
   // API CALLING.
-  let res = await fetch("https://meme-api.com/gimme");
+  let res = await fetch("https://meme-api.com/gimme/1");
   let data = await res.json();
   let url = data.url;
   //required url data fetched from api is stored in url
