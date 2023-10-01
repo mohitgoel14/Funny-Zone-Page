@@ -22,7 +22,7 @@ nav .logo img {
 }
 /* nav bar site name */
 nav .logo p {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   float: left;
   color: aliceblue;
@@ -32,18 +32,26 @@ nav .logo p {
   cursor: pointer;
 }
 /* unordered list of nav bar */
+@media (min-width: 400px){
 nav ul {
   float: right;
+  margin-right: 20px;
+  height: 70px;
 }
+li:last-child {
+    display: none;
+}
+}
+
 nav li {
   display: inline-block;
   list-style: none;
+  
 }
 nav li a {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
-  padding: 0px 30px;
-  border-right: 1px solid white;
+  margin: 0px 30px;
   color: aliceblue;
   text-decoration: none;
 }
